@@ -1,4 +1,5 @@
 import getPrice from '../helpers/getPrice';
+import PropTypes from 'prop-types';
 
 const ProductCard = ({product}) => {
   return (
@@ -19,5 +20,15 @@ const ProductCard = ({product}) => {
     </>
   );
 };
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    imageUrl: PropTypes.string,
+    name: PropTypes.string,
+    price: PropTypes.number, 
+    sellingPrice: PropTypes.number,
+  }).isRequired
+}
+
 
 export default ProductCard;
