@@ -1,12 +1,11 @@
 import { Route, Switch } from 'react-router-dom';
 import React from 'react';
-import CartLess from './pages/CartLess';
-import CartMore from './pages/CartMore';
+import Cart from './pages/Cart';
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/cartLess" component={ CartLess } />
-    <Route exact path="/cartMore" component={ CartMore } />
+    <Route exact path="/cartLess" component={ Cart } />
+    <Route exact path="/cartMore" component={ Cart } />
   </Switch>
 );
 
