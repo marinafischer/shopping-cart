@@ -23,8 +23,8 @@
   - Usar Flex-Box CSS.
 
 ## Como começar:
-  1. Clone o repositório
-    * `git clone git@github.com:marinafischer/shopping-cart.git`
+  1. Clone o repositório:
+   * `git clone git@github.com:marinafischer/shopping-cart.git`
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd shopping-cart`
 
