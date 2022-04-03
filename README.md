@@ -24,9 +24,9 @@
 
 ## Como começar:
   1. Clone o repositório
-  * `git clone git@github.com:`
+  * `git clone git@github.com:marinafischer/shopping-cart.git`
   * Entre na pasta do repositório que você acabou de clonar:
-  * `cd SHOPPING-CART`
+  * `cd shopping-cart`
 
   2. Instale as dependências e inicialize o projeto
   * Instale as dependências:
