@@ -1,7 +1,7 @@
 # Boas vindas ao shopping-cart!
 
 ## Tecnologias: 
-  Para este projeto foram usadas as seguintes técnolgias:
+  Para este projeto foram usadas as seguintes tecnolgias:
   - JS;
   - CSS;
   - JSX;
