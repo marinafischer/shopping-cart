@@ -3,6 +3,7 @@ import ProductCard from '../components/ProductCard';
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import getPrice from '../helpers/getPrice';
+import '../styles/Cart.css'
 
 const Cart = () => {
   const [data, setData] = useState({});
@@ -20,27 +21,32 @@ const Cart = () => {
 
   if (Object.keys(data).length > 0) {
     return (
-      <div>
-        <h1>Meu carrinho</h1>
-        <div>
+      <div className="cartCointainer">
+        <div className="dashContainer">
+          <h1 class="mainTitle">Meu carrinho</h1>
+        </div>
+        <div className="dashContainer">
           {
             data.items.map((item) => (
-              <div key={item.uniqueId}>
+              <div key={item.uniqueId} className="productCard">
                 <ProductCard product = {item} />
               </div>
             ))
           }
         </div>
-        <div>
-          <div>
-            <h1>Total</h1>
-            <h1>{getPrice(data.value)}</h1>
+        <div className="dashContainer">
+          <div className="totalContent">
+            <h1 class="mainTitle">Total</h1>
+            <h1 class="mainTitle">{getPrice(data.value)}</h1>
           </div>
           {
-            data.value > 1000 && <span>Parabéns, sua compra tem frete grátis !</span>
+            data.value > 1000 && 
+              <span className="shippingSpan"> Parabéns, sua compra tem frete grátis !</span>
           }
         </div>
-        <button type="button">Finalizar compra</button>
+        <button type="button" className="finishButton">
+          Finalizar compra
+        </button>
       </div>
     )
   }

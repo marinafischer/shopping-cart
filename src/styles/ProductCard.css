@@ -1,0 +1,25 @@
+.imageContent {
+  border: 1.5px solid var(--bg-light-blue);
+  width: 120px;
+}
+
+.productImage { 
+  padding: 0px 15px;
+}
+
+.productDetails {
+  padding: 15px;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.productPrice {
+  font-weight:600;
+}
+
+.smallPrice{
+  color: var(--bs-grey);
+}

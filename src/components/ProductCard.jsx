@@ -1,19 +1,24 @@
 import getPrice from '../helpers/getPrice';
 import PropTypes from 'prop-types';
+import '../styles/ProductCard.css'
 
 const ProductCard = ({product}) => {
   return (
     <>
-      <img src={product.imageUrl} alt="product" style={{width:'80px'}}/>
-      <div>
-        <h2>
+      <div className="imageContent">
+        <img className="productImage" src={product.imageUrl} alt="product" />
+      </div>
+      <div className="productDetails">
+        <h4 className="productName">
           {product.name}
-        </h2>
-        <span>
-          {getPrice(product.price)}
+        </h4>
+        <span className="productPrice smallPrice">
+          <small>
+            {getPrice(product.price)}
+          </small>
         </span>
         <br />
-        <span>
+        <span className="productPrice">
           {getPrice(product.sellingPrice)}
         </span>
       </div>

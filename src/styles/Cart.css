@@ -1,0 +1,58 @@
+.cartCointainer {
+  background-color: var(--bs-white);
+  border-radius: 1.5em;
+  box-shadow: 4px 4px 20px var(--bs-grey);
+  margin: 5% auto;
+  width: 580px;
+}
+
+.mainTitle {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.dashContainer {
+  border-bottom: 1.5px solid var(--bg-light-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.productCard {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  width: 95%;
+}
+
+.totalContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.shippingSpan {
+  align-self: center;
+  background-color: var(--bs-light-green);
+  border-radius: 2em;
+  color: var(--bs-dark-green);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
+.finishButton {
+  background-color: var(--bs-dark-blue);
+  border: none;
+  border-radius: 0.5em;
+  color: var(--bs-white);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 40px;
+  padding: 20px;
+  width: 500px;
+}
